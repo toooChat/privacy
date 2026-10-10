@@ -1,0 +1,1355 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f9fc">
+    <meta name="description" content="tooChat 隐私政策，了解我们如何处理和保护您的个人信息。">
+    <meta name="robots" content="index, follow">
+    <title>隐私政策 - tooChat</title>
+
+    <style>
+        :root {
+            --bg: #f7f8fc;
+            --surface: #fff;
+            --text: #202533;
+            --muted: #687083;
+            --border: #e6e9f0;
+            --primary: #4659d9;
+            --soft: #eef0ff;
+            --shadow: 0 12px 40px rgba(25,35,70,.06);
+        }
+
+        * { box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 24px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.85;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(255,255,255,.94);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .topbar-inner {
+            max-width: 1160px;
+            min-height: 68px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text);
+            font-size: 19px;
+            font-weight: 750;
+            letter-spacing: -.4px;
+        }
+
+        .brand-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 11px;
+            background: var(--primary);
+            color: white;
+            font-size: 17px;
+            font-weight: 800;
+        }
+
+        .top-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        .back-link {
+            color: var(--muted);
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .language-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 4px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: white;
+        }
+
+        .language-switch button {
+            padding: 7px 11px;
+            border: 0;
+            border-radius: 8px;
+            background: transparent;
+            color: var(--muted);
+            font: inherit;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .language-switch button.active {
+            background: var(--soft);
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .hero {
+            padding: 64px 24px 42px;
+            text-align: center;
+        }
+
+        .hero-inner {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            padding: 5px 12px;
+            border: 1px solid #e1e5ff;
+            border-radius: 999px;
+            background: var(--soft);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 650;
+        }
+
+        h1 {
+            margin: 20px 0 12px;
+            font-size: clamp(34px,5vw,48px);
+            line-height: 1.2;
+            letter-spacing: -1.5px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 22px;
+            margin-top: 23px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 248px minmax(0,1fr);
+            align-items: start;
+            gap: 28px;
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px 70px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 92px;
+            padding: 22px 17px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .toc-title {
+            margin: 0 0 13px;
+            font-size: 13px;
+            font-weight: 750;
+        }
+
+        .toc a {
+            display: block;
+            padding: 7px 9px;
+            border-radius: 8px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .toc a:hover {
+            background: var(--soft);
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .content {
+            min-width: 0;
+            padding: 38px 44px;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .intro {
+            margin: 0 0 28px;
+            padding: 18px 20px;
+            border-left: 3px solid var(--primary);
+            border-radius: 0 10px 10px 0;
+            background: #f6f7ff;
+            color: #444d68;
+        }
+
+        section {
+            padding: 0 0 25px;
+            margin: 0 0 28px;
+            border-bottom: 1px solid var(--border);
+            scroll-margin-top: 95px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        h2 {
+            margin: 0 0 15px;
+            font-size: 21px;
+            line-height: 1.45;
+            letter-spacing: -.3px;
+        }
+
+        h3 {
+            margin: 21px 0 8px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        p { margin: 0 0 12px; }
+
+        ul, ol {
+            margin: 9px 0 14px;
+            padding-left: 23px;
+        }
+
+        li {
+            margin: 5px 0;
+            padding-left: 2px;
+        }
+
+        .muted { color: var(--muted); }
+
+        .contact-card {
+            margin-top: 16px;
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: #fbfcff;
+        }
+
+        .contact-card p:last-child { margin-bottom: 0; }
+
+        .footer {
+            padding: 25px 20px 38px;
+            border-top: 1px solid var(--border);
+            background: white;
+            text-align: center;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 10px;
+        }
+
+        [hidden] { display: none !important; }
+
+        @media (max-width: 850px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .toc {
+                position: static;
+                padding: 16px;
+            }
+
+            .toc-links {
+                display: grid;
+                grid-template-columns: repeat(2,minmax(0,1fr));
+                gap: 2px 8px;
+            }
+
+            .content { padding: 30px 25px; }
+            .hero { padding-top: 48px; }
+        }
+
+        @media (max-width: 520px) {
+            body { font-size: 14px; }
+
+            .topbar-inner {
+                min-height: 60px;
+                padding: 10px 14px;
+                gap: 8px;
+            }
+
+            .brand {
+                font-size: 17px;
+                gap: 7px;
+            }
+
+            .brand-mark {
+                width: 30px;
+                height: 30px;
+                border-radius: 9px;
+            }
+
+            .top-actions { gap: 7px; }
+            .back-link { display: none; }
+
+            .language-switch button { padding: 6px 8px; }
+
+            .hero { padding: 38px 18px 28px; }
+            h1 { font-size: 34px; }
+
+            .layout { padding: 0 12px 42px; }
+
+            .toc { padding: 14px 12px; }
+            .toc-links { grid-template-columns: 1fr; }
+
+            .content {
+                padding: 24px 19px;
+                border-radius: 14px;
+            }
+
+            h2 { font-size: 19px; }
+            .intro { padding: 14px; }
+        }
+
+        @media print {
+            .topbar, .toc, .footer-links {
+                display: none !important;
+            }
+
+            body { background: white; }
+            .hero { padding-top: 10px; }
+
+            .layout {
+                display: block;
+                max-width: none;
+                padding: 0;
+            }
+
+            .content {
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+            }
+
+            section { break-inside: avoid; }
+        }
+    </style>
+</head>
+
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a class="brand" href="./index.html" aria-label="tooChat 首页">
+            <span class="brand-mark">t</span>
+            <span>tooChat</span>
+        </a>
+
+        <div class="top-actions">
+            <a class="back-link" href="./index.html">
+                <span data-lang="zh">返回首页</span>
+                <span data-lang="en" hidden>Back to Home</span>
+            </a>
+
+            <div class="language-switch" role="group" aria-label="Language">
+                <button type="button" class="active"
+                        data-set-language="zh" aria-pressed="true">简体中文</button>
+                <button type="button"
+                        data-set-language="en" aria-pressed="false">English</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ==================== 简体中文 ==================== -->
+<div data-content-language="zh">
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="eyebrow">隐私与数据保护</span>
+            <h1>隐私政策</h1>
+            <p class="hero-description">
+                我们重视您的隐私。本政策说明 tooChat 如何处理与您使用服务相关的个人信息，
+                以及您可以如何管理自己的信息。
+            </p>
+            <div class="meta">
+                <span>生效日期：2026 年 10 月 11 日</span>
+                <span>适用服务：tooChat</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="layout">
+        <aside class="toc">
+            <p class="toc-title">目录</p>
+            <nav class="toc-links">
+                <a href="#zh-1">1. 政策适用范围</a>
+                <a href="#zh-2">2. 我们处理的信息</a>
+                <a href="#zh-3">3. 信息的使用方式</a>
+                <a href="#zh-4">4. 消息、投诉与内容审核</a>
+                <a href="#zh-5">5. 第三方服务与信息共享</a>
+                <a href="#zh-6">6. 信息存储与安全</a>
+                <a href="#zh-7">7. 您的权利与选择</a>
+                <a href="#zh-8">8. 儿童隐私</a>
+                <a href="#zh-9">9. 政策更新</a>
+                <a href="#zh-10">10. 联系我们</a>
+            </nav>
+        </aside>
+
+        <article class="content">
+            <div class="intro">
+                请在使用 tooChat 前阅读本政策。如果您不同意本政策中的相关内容，
+                请停止使用相应服务。我们会按照适用法律法规及实际服务情况处理个人信息。
+            </div>
+
+            <section id="zh-1">
+                <h2>1. 政策适用范围</h2>
+                <p>
+                    本隐私政策适用于 tooChat 提供的聊天、账号、个人资料、好友关系、
+                    黑名单、投诉及反馈等相关功能。
+                </p>
+                <p>
+                    本政策说明我们可能处理哪些信息、处理信息的目的、信息可能被提供给哪些类别的服务提供商，
+                    以及您可以行使的相关权利。
+                </p>
+                <p>
+                    某些功能可能根据您的使用情况而适用不同的信息处理方式。
+                    如果某项功能另有单独的隐私说明，我们会在适当位置向您说明。
+                </p>
+            </section>
+
+            <section id="zh-2">
+                <h2>2. 我们处理的信息</h2>
+
+                <h3>2.1 账号与身份信息</h3>
+                <p>
+                    当您注册、登录或使用账号功能时，我们可能处理账号标识、用户名、昵称、
+                    账号凭证的安全验证信息，以及维持登录状态所需的信息。
+                </p>
+                <p>
+                    如果您选择提供电话号码或其他资料，我们可能会在相应功能所必需的范围内处理这些信息。
+                    请勿在昵称或个人资料中填写不必要的敏感信息。
+                </p>
+
+                <h3>2.2 个人资料与头像</h3>
+                <p>
+                    我们可能处理您主动提交的昵称、头像及其他个人资料，
+                    以便向您本人或其他用户展示相应的账号信息。
+                </p>
+                <p>
+                    您可以根据应用提供的功能修改个人资料。修改后的内容可能需要重新加载或同步后才会显示。
+                </p>
+
+                <h3>2.3 聊天消息与会话信息</h3>
+                <p>
+                    当您使用聊天功能时，我们会处理提供消息传输、会话展示和相关功能所需的信息，
+                    例如消息内容、消息类型、发送者和接收者标识、会话关联信息以及消息时间等。
+                </p>
+                <p>
+                    为了实现消息同步、未读消息统计和已读状态等功能，我们也可能处理相关的消息状态及会话状态信息。
+                </p>
+
+                <h3>2.4 好友、黑名单及投诉信息</h3>
+                <p>
+                    当您添加好友、处理好友申请、删除好友、屏蔽用户或提交投诉时，
+                    我们可能处理相关用户标识、关系状态、投诉原因、您填写的补充说明及处理状态等信息。
+                </p>
+                <p>请勿在投诉内容中提交与投诉事项无关的个人信息或他人的敏感信息。</p>
+
+                <h3>2.5 反馈信息</h3>
+                <p>
+                    当您向我们提交意见或反馈时，我们会处理您提交的内容，以及处理反馈所需的状态和时间信息。
+                    如反馈中包含您的账号标识，我们可能会使用该信息进行跟进。
+                </p>
+
+                <h3>2.6 设备与推送信息</h3>
+                <p>
+                    为提供消息通知等功能，我们可能处理设备标识、推送服务所需的设备令牌、
+                    平台类型、推送环境和设备活动状态等信息。
+                </p>
+                <p>
+                    如果您允许应用发送通知，相关推送服务可能会根据您的设备和系统设置向您发送通知。
+                    您可以通过设备系统设置管理通知权限。
+                </p>
+
+                <h3>2.7 运行与安全信息</h3>
+                <p>
+                    为维护服务运行、排查故障、防止滥用和保障账号安全，
+                    我们可能处理必要的请求状态、错误信息、操作时间及安全相关记录。
+                </p>
+                <p>
+                    实际处理范围取决于您使用的功能及其运行所必需的程度。
+                    本节列出的信息类别不代表所有用户或所有功能都会涉及每一类信息。
+                </p>
+            </section>
+
+            <section id="zh-3">
+                <h2>3. 信息的使用方式</h2>
+                <p>我们可能在以下目的所必需的范围内使用相关信息：</p>
+                <ul>
+                    <li>创建和维护账号，验证登录状态并提供账号相关功能；</li>
+                    <li>传输和展示聊天消息，维护会话、好友及黑名单关系；</li>
+                    <li>提供消息通知、未读数量和消息状态等功能；</li>
+                    <li>接收、处理和跟进用户投诉及意见反馈；</li>
+                    <li>在投诉审核过程中协助管理员了解投诉相关情况；</li>
+                    <li>维护服务稳定性，排查故障，防止欺诈、滥用或违反服务规则的行为；</li>
+                    <li>遵守适用法律法规，或在依法有权的情况下响应合法请求。</li>
+                </ul>
+                <p>
+                    我们不会将本政策列出的信息用途理解为不受限制的授权。
+                    如果信息需要用于与原目的不相符的新用途，我们会在适用法律要求的情况下，
+                    另行告知或取得必要的授权。
+                </p>
+            </section>
+
+            <section id="zh-4">
+                <h2>4. 消息、投诉与内容审核</h2>
+
+                <h3>4.1 聊天消息的处理</h3>
+                <p>
+                    聊天消息会按照提供聊天服务所需的方式进行处理。
+                    在通常的消息发送流程中，我们不会仅因为本政策涉及投诉审核，
+                    就将每一条新发送的消息自动提交给 AI 内容审核服务。
+                </p>
+                <p>
+                    消息是否能够发送，还可能受到账号状态、好友关系、黑名单设置、
+                    服务规则及其他必要安全措施的影响。
+                </p>
+
+                <h3>4.2 投诉与人工审核</h3>
+                <p>
+                    如果用户提交投诉，管理员可以根据投诉内容和实际审核需要调查相关情况。
+                    在审核过程中，管理员可能查看与被投诉用户有关的相关历史消息，
+                    以了解投诉背景并作出处理决定。
+                </p>
+                <p>
+                    投诉审核只应在处理投诉和维护服务安全所必需的范围内进行。
+                    管理员应避免访问或使用与投诉处理无关的信息。
+                </p>
+
+                <h3>4.3 第三方 AI 辅助内容分析</h3>
+                <p>
+                    在管理员审核投诉时，我们可能将与被投诉用户有关的相关历史消息提交给
+                    <strong>第三方内容分析服务提供商</strong>，用于 AI 辅助分析。
+                    该处理仅在投诉审核场景下，根据审核需要进行，并非对每一条聊天消息在发送时自动执行的审核。
+                </p>
+                <p>
+                    提交的内容可能包含与投诉调查有关的消息文本。
+                    我们会根据审核目的和实际需要确定提交的相关内容。
+                    第三方服务提供商可能依据其适用的服务条款、隐私规则和服务配置处理接收的数据。
+                </p>
+                <p>
+                    AI 分析结果仅用于辅助管理员了解投诉内容和评估风险，
+                    <strong>不构成自动作出的最终处理决定</strong>。
+                    管理员仍需结合投诉情况和相关消息进行人工判断，并决定是否采取进一步措施。
+                </p>
+                <p>
+                    第三方服务的数据处理方式、保存期限、处理区域及其他具体安排，
+                    以实际使用的服务配置和适用条款为准。我们不会在未经核实的情况下，
+                    对第三方的数据保存、模型训练或其他处理行为作出保证。
+                </p>
+            </section>
+
+            <section id="zh-5">
+                <h2>5. 第三方服务与信息共享</h2>
+
+                <h3>5.1 服务提供商</h3>
+                <p>
+                    为运行 tooChat，我们可能使用第三方提供的云服务、数据存储、
+                    账号验证、消息推送、内容分析、运行维护及其他必要的技术服务。
+                </p>
+                <p>
+                    这些服务提供商可能在履行相应服务所必需的范围内处理相关信息。
+                    我们会根据适用法律和具体服务安排采取合理措施，管理此类信息处理活动。
+                </p>
+
+                <h3>5.2 消息推送服务</h3>
+                <p>
+                    当您使用推送通知功能时，必要的设备令牌或通知相关信息可能由相应的推送服务提供商处理，
+                    以便将通知传送至您的设备。推送通知的展示方式也可能受到设备操作系统设置的影响。
+                </p>
+
+                <h3>5.3 第三方内容审核服务</h3>
+                <p>
+                    在管理员审核用户投诉时，我们可能将与被投诉用户有关的相关历史消息提交给
+                    第三方内容审核服务提供商，用于 AI 辅助分析。
+                    这不是对所有聊天消息进行的实时或逐条自动审核。
+                </p>
+                <p>
+                    相关数据的提供范围应以完成该次投诉审核所需的内容为限。
+                    第三方服务提供商对接收数据的处理，受其适用的服务条款、隐私规则和实际服务配置约束。
+                </p>
+                <p>
+                    AI 分析结果供管理员参考，最终投诉处理决定由管理员作出。
+                    对于第三方服务的数据保留、处理区域或其他处理细节，
+                    我们不会在未经核实的情况下作出超出实际情况的承诺。
+                </p>
+
+                <h3>5.4 我们不会出售个人信息</h3>
+                <p>
+                    我们不会出售您的个人信息，也不会仅为与提供服务无关的第三方营销目的而任意披露您的信息。
+                </p>
+                <p>
+                    除本政策说明的服务提供、经您授权或适用法律允许的情形外，
+                    我们不会任意共享可识别您的个人信息。
+                </p>
+
+                <h3>5.5 法律、安全及业务变更</h3>
+                <p>
+                    在适用法律要求或允许的情况下，我们可能披露必要的信息以履行法律义务、
+                    处理合法请求、保护用户或公众安全，或者维护我们及他人的合法权益。
+                </p>
+                <p>
+                    如发生业务合并、重组或类似变更，相关信息可能按照适用法律进行转移。
+                    如法律要求，我们会就相关变化提供必要的通知或保护措施。
+                </p>
+            </section>
+
+            <section id="zh-6">
+                <h2>6. 信息存储与安全</h2>
+
+                <h3>6.1 存储期限</h3>
+                <p>
+                    我们会根据提供服务、维护账号与消息功能、处理投诉、保障安全、
+                    解决争议以及履行法律义务等实际需要，确定相关信息的保存期限。
+                </p>
+                <p>
+                    当相关信息不再为其收集目的所必需，且不存在继续保存的合法依据时，
+                    我们会根据适用法律和实际情况删除信息或进行适当处理。
+                </p>
+                <p>
+                    不同类型的信息可能适用不同的保存期限。
+                    对于第三方服务处理的数据，其保存方式和期限还可能受到相应服务条款及配置的影响。
+                </p>
+
+                <h3>6.2 安全措施</h3>
+                <p>
+                    我们会根据数据的性质、处理方式和潜在风险，采取合理的技术和管理措施，
+                    以降低未经授权访问、披露、篡改或丢失信息的风险。
+                </p>
+                <p>
+                    互联网传输和电子存储无法保证绝对安全。
+                    我们会努力保护相关信息，但无法承诺任何系统或传输方式在所有情况下都绝对安全。
+                </p>
+
+                <h3>6.3 用户自身的安全责任</h3>
+                <p>
+                    请妥善保管账号凭证，不要将验证码、密码或其他安全凭证分享给他人。
+                    如果您认为账号可能被未经授权使用，请尽快通过本政策列出的联系方式与我们联系。
+                </p>
+            </section>
+
+            <section id="zh-7">
+                <h2>7. 您的权利与选择</h2>
+
+                <h3>7.1 管理个人资料</h3>
+                <p>
+                    您可以使用应用中提供的相关功能查看或修改可编辑的个人资料，
+                    例如昵称或头像。部分信息可能因安全、运行或法律要求而无法直接修改。
+                </p>
+
+                <h3>7.2 管理通知权限</h3>
+                <p>
+                    您可以在设备系统设置中开启或关闭 tooChat 的通知权限。
+                    关闭通知可能影响消息提醒的接收方式，但不一定会影响应用内的消息功能。
+                </p>
+
+                <h3>7.3 好友与黑名单管理</h3>
+                <p>
+                    如果应用提供相应功能，您可以管理好友关系或屏蔽其他用户。
+                    这些设置可能影响用户之间的互动，但不一定会自动删除此前已经产生的所有数据。
+                </p>
+
+                <h3>7.4 投诉、反馈及隐私请求</h3>
+                <p>
+                    如果您对个人信息的处理有疑问，或希望请求访问、更正、删除相关信息、
+                    撤回授权或行使适用法律赋予的其他权利，可以通过本政策列出的邮箱与我们联系。
+                </p>
+                <p>
+                    我们可能需要核实您的身份和请求范围，以保护账号安全及其他用户的合法权益。
+                    对于法律允许或要求保留的信息，我们可能无法立即删除或满足某些请求。
+                </p>
+
+                <h3>7.5 删除账号</h3>
+                <p>
+                    如果应用提供账号删除功能，您可以按照应用内的指引提交删除请求。
+                    删除账号后，相关信息将按照适用的删除流程和法律要求处理。
+                </p>
+                <p>
+                    账号删除不一定意味着所有相关信息会在同一时刻从所有系统和备份中彻底移除。
+                    为履行法律义务、处理争议、防止滥用或完成必要的技术处理，
+                    部分信息可能在合法且必要的期限内继续保留。
+                </p>
+            </section>
+
+            <section id="zh-8">
+                <h2>8. 儿童隐私</h2>
+                <p>
+                    tooChat 并非专门面向儿童设计的服务。
+                    如果适用法律对未成年人使用服务或处理其个人信息设有年龄、同意或其他要求，
+                    我们会按照相关法律要求处理。
+                </p>
+                <p>
+                    如果您是监护人，并认为未成年人在未经适当授权的情况下向我们提供了个人信息，
+                    请通过本政策列出的联系方式与我们联系，以便我们评估并采取适当措施。
+                </p>
+            </section>
+
+            <section id="zh-9">
+                <h2>9. 政策更新</h2>
+                <p>
+                    我们可能因服务功能、数据处理方式、适用法律或运营安排的变化而更新本政策。
+                    更新后的版本将在本页面发布，并在适当情况下更新生效日期。
+                </p>
+                <p>
+                    如果变更涉及适用法律要求特别告知或取得同意的重要事项，
+                    我们会根据相关要求采取相应措施。
+                </p>
+                <p>建议您定期查看本页面，以了解当前适用的隐私政策。</p>
+            </section>
+
+            <section id="zh-10">
+                <h2>10. 联系我们</h2>
+                <p>
+                    如果您对本隐私政策、个人信息处理或隐私权利请求有任何疑问，
+                    可以通过以下邮箱联系我们。
+                </p>
+                <div class="contact-card">
+                    <p><strong>tooChat 隐私与支持联系邮箱</strong></p>
+                    <p><a href="mailto:kfzcount@gmail.com">kfzcount@gmail.com</a></p>
+                    <p class="muted">
+                        为便于我们处理您的请求，请尽量说明请求事项及相关情况。
+                        请勿在邮件中发送密码、验证码或其他不必要的敏感信息。
+                    </p>
+                </div>
+            </section>
+
+            <p class="muted" style="margin-top:28px;font-size:12px;">
+                本政策应结合 tooChat 实际提供的功能、实际数据处理流程及适用法律理解。
+                如本政策与实际功能存在差异，我们会根据实际情况和适用法律进行核实与修订。
+            </p>
+        </article>
+    </main>
+</div>
+
+<!-- ==================== ENGLISH ==================== -->
+<div data-content-language="en" hidden>
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="eyebrow">Privacy &amp; Data Protection</span>
+            <h1>Privacy Policy</h1>
+            <p class="hero-description">
+                We value your privacy. This policy explains how tooChat processes
+                personal information in connection with your use of our services
+                and how you can manage your information.
+            </p>
+            <div class="meta">
+                <span>Effective date: October 11, 2026</span>
+                <span>Service: tooChat</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="layout">
+        <aside class="toc">
+            <p class="toc-title">Contents</p>
+            <nav class="toc-links">
+                <a href="#en-1">1. Scope</a>
+                <a href="#en-2">2. Information We Process</a>
+                <a href="#en-3">3. How We Use Information</a>
+                <a href="#en-4">4. Messages, Reports &amp; Content Review</a>
+                <a href="#en-5">5. Third-Party Services &amp; Sharing</a>
+                <a href="#en-6">6. Storage &amp; Security</a>
+                <a href="#en-7">7. Your Rights &amp; Choices</a>
+                <a href="#en-8">8. Children's Privacy</a>
+                <a href="#en-9">9. Policy Updates</a>
+                <a href="#en-10">10. Contact Us</a>
+            </nav>
+        </aside>
+
+        <article class="content">
+            <div class="intro">
+                Please read this policy before using tooChat. If you do not agree
+                with the relevant terms, please stop using the applicable services.
+                We process personal information in accordance with applicable law
+                and the actual operation of our services.
+            </div>
+
+            <section id="en-1">
+                <h2>1. Scope of This Policy</h2>
+                <p>
+                    This Privacy Policy applies to the messaging, account, profile,
+                    friend relationship, blocking, user reporting, feedback, and
+                    related features provided by tooChat.
+                </p>
+                <p>
+                    It explains the types of information we may process, the
+                    purposes of processing, the categories of service providers
+                    that may receive information, and the rights available to you.
+                </p>
+                <p>
+                    Certain features may involve different processing activities
+                    depending on how you use them. If a feature has a separate
+                    privacy notice, we will provide it where appropriate.
+                </p>
+            </section>
+
+            <section id="en-2">
+                <h2>2. Information We Process</h2>
+
+                <h3>2.1 Account and Authentication Information</h3>
+                <p>
+                    When you register, sign in, or use account features, we may
+                    process account identifiers, usernames, nicknames,
+                    authentication-related security information, and information
+                    needed to maintain your signed-in session.
+                </p>
+                <p>
+                    If you choose to provide a phone number or other details,
+                    we may process them to the extent necessary for the relevant
+                    feature. Please do not include unnecessary sensitive
+                    information in your nickname or profile.
+                </p>
+
+                <h3>2.2 Profile Information and Avatars</h3>
+                <p>
+                    We may process profile information you submit, such as your
+                    nickname, avatar, and other profile details, to display
+                    account information to you or other users as appropriate.
+                </p>
+                <p>
+                    You may update profile information using available app
+                    features. Updated information may require reloading or
+                    synchronization before it appears.
+                </p>
+
+                <h3>2.3 Chat Messages and Conversation Information</h3>
+                <p>
+                    When you use messaging features, we process information
+                    needed to deliver messages, display conversations, and
+                    support related functionality. This may include message
+                    content and type, sender and recipient identifiers,
+                    conversation references, and message timestamps.
+                </p>
+                <p>
+                    To support synchronization, unread-message counts, and
+                    read status, we may also process relevant message and
+                    conversation status information.
+                </p>
+
+                <h3>2.4 Friends, Blocking, and Reports</h3>
+                <p>
+                    When you add a friend, respond to a friend request, remove
+                    a friend, block a user, or submit a report, we may process
+                    relevant user identifiers, relationship status, report
+                    reasons, additional details you provide, and processing
+                    status information.
+                </p>
+                <p>
+                    Please do not include personal information unrelated to
+                    the reported issue or another person's sensitive information
+                    in a report.
+                </p>
+
+                <h3>2.5 Feedback</h3>
+                <p>
+                    When you submit feedback, we process the content you
+                    provide and the status and timing information needed to
+                    handle it. If feedback includes your account identifier,
+                    we may use that information to follow up.
+                </p>
+
+                <h3>2.6 Device and Push Notification Information</h3>
+                <p>
+                    To provide notification features, we may process device
+                    identifiers, device tokens required for push delivery,
+                    platform type, push environment, and device activity status.
+                </p>
+                <p>
+                    If you allow notifications, the relevant push service may
+                    deliver notifications according to your device and system
+                    settings. You can manage notification permissions in your
+                    device settings.
+                </p>
+
+                <h3>2.7 Operational and Security Information</h3>
+                <p>
+                    To maintain service operation, troubleshoot issues, prevent
+                    abuse, and protect account security, we may process necessary
+                    request status, error information, operation timestamps,
+                    and security-related records.
+                </p>
+                <p>
+                    Actual processing depends on the features you use and what
+                    is necessary for them to operate. Listing a category here
+                    does not mean that every category applies to every user
+                    or feature.
+                </p>
+            </section>
+
+            <section id="en-3">
+                <h2>3. How We Use Information</h2>
+                <p>We may use relevant information as necessary to:</p>
+                <ul>
+                    <li>Create and maintain accounts, validate sessions, and provide account features;</li>
+                    <li>Deliver and display messages and maintain conversation, friend, and blocking relationships;</li>
+                    <li>Provide notifications, unread counts, and message status features;</li>
+                    <li>Receive, process, and follow up on user reports and feedback;</li>
+                    <li>Assist administrators in understanding report-related circumstances during complaint review;</li>
+                    <li>Maintain service stability, troubleshoot problems, and prevent fraud, abuse, or violations of service rules;</li>
+                    <li>Comply with applicable laws or respond to lawful requests where legally permitted or required.</li>
+                </ul>
+                <p>
+                    The purposes described in this policy do not constitute
+                    unrestricted permission to use information. If information
+                    is to be used for a materially incompatible new purpose,
+                    we will provide notice or obtain authorization where
+                    required by applicable law.
+                </p>
+            </section>
+
+            <section id="en-4">
+                <h2>4. Messages, Reports, and Content Review</h2>
+
+                <h3>4.1 Processing of Chat Messages</h3>
+                <p>
+                    Chat messages are processed as needed to provide messaging
+                    services. The fact that this policy describes complaint
+                    review does not mean that every newly sent message is
+                    automatically submitted to an AI content review service
+                    during the normal sending process.
+                </p>
+                <p>
+                    Message delivery may also be affected by account status,
+                    friend relationships, blocking settings, service rules,
+                    and other necessary safety measures.
+                </p>
+
+                <h3>4.2 Reports and Human Review</h3>
+                <p>
+                    When a user submits a report, an administrator may
+                    investigate the relevant circumstances based on the report
+                    and the needs of the review. During this process, the
+                    administrator may review relevant historical messages
+                    associated with the reported user to understand the
+                    context and make a decision.
+                </p>
+                <p>
+                    Complaint review should be limited to what is necessary
+                    to handle the report and maintain service safety.
+                    Administrators should avoid accessing or using information
+                    unrelated to the complaint.
+                </p>
+
+                <h3>4.3 Third-Party AI-Assisted Content Analysis</h3>
+                <p>
+                    During an administrator's review of a user report, we may
+                    submit relevant historical messages associated with the
+                    reported user to a <strong>third-party content analysis
+                    service provider</strong> for AI-assisted analysis.
+                    This processing takes place in the complaint-review context
+                    when needed; it is not an automatic review of every chat
+                    message at the time it is sent.
+                </p>
+                <p>
+                    Submitted content may include message text relevant to the
+                    investigation. We determine the relevant content to submit
+                    based on the purpose and actual needs of the review.
+                    The third-party provider may process received data under
+                    its applicable service terms, privacy rules, and service
+                    configuration.
+                </p>
+                <p>
+                    AI analysis is used only to assist administrators in
+                    understanding reports and assessing potential risks.
+                    <strong>It does not constitute an automated final
+                    enforcement decision.</strong> Administrators must still
+                    assess the report and relevant messages and make the final
+                    decision on whether further action is appropriate.
+                </p>
+                <p>
+                    Third-party data handling practices, retention periods,
+                    processing regions, and other details depend on the actual
+                    service configuration and applicable terms. We do not make
+                    unverified guarantees about third-party data retention,
+                    model training, or other processing practices.
+                </p>
+            </section>
+
+            <section id="en-5">
+                <h2>5. Third-Party Services and Information Sharing</h2>
+
+                <h3>5.1 Service Providers</h3>
+                <p>
+                    To operate tooChat, we may use third-party cloud services,
+                    data storage, authentication, push notification, content
+                    analysis, operational support, and other necessary technical
+                    services.
+                </p>
+                <p>
+                    These service providers may process relevant information
+                    to the extent necessary to perform their services. We take
+                    reasonable measures to manage such processing in accordance
+                    with applicable law and the arrangements for the relevant
+                    services.
+                </p>
+
+                <h3>5.2 Push Notification Services</h3>
+                <p>
+                    When you use push notifications, necessary device tokens
+                    or notification-related information may be processed by
+                    the relevant push service provider to deliver notifications
+                    to your device. How notifications are displayed may also
+                    depend on your operating system settings.
+                </p>
+
+                <h3>5.3 Third-Party Content Review Services</h3>
+                <p>
+                    During an administrator's review of a user report, we may
+                    submit relevant historical messages associated with the
+                    reported user to a third-party content review service
+                    provider for AI-assisted analysis. This is not real-time
+                    or message-by-message automatic review of all chat messages.
+                </p>
+                <p>
+                    Information provided should be limited to what is needed
+                    for the particular complaint review. The provider's
+                    processing of received data is subject to its applicable
+                    service terms, privacy rules, and actual configuration.
+                </p>
+                <p>
+                    AI analysis is provided for administrators' reference;
+                    the final complaint-handling decision is made by an
+                    administrator. We do not make unverified representations
+                    about third-party data retention, processing regions,
+                    or other processing details.
+                </p>
+
+                <h3>5.4 We Do Not Sell Personal Information</h3>
+                <p>
+                    We do not sell your personal information or arbitrarily
+                    disclose it for third-party marketing purposes unrelated
+                    to providing our services.
+                </p>
+                <p>
+                    Except for service provision described in this policy,
+                    sharing authorized by you, or circumstances permitted by
+                    applicable law, we do not arbitrarily share personal
+                    information that identifies you.
+                </p>
+
+                <h3>5.5 Legal Requirements, Safety, and Business Changes</h3>
+                <p>
+                    Where required or permitted by applicable law, we may
+                    disclose necessary information to comply with legal
+                    obligations, respond to lawful requests, protect users
+                    or public safety, or protect our or others' legal rights.
+                </p>
+                <p>
+                    In the event of a merger, reorganization, or similar
+                    business change, information may be transferred in
+                    accordance with applicable law. Where legally required,
+                    we will provide appropriate notice or safeguards.
+                </p>
+            </section>
+
+            <section id="en-6">
+                <h2>6. Information Storage and Security</h2>
+
+                <h3>6.1 Retention</h3>
+                <p>
+                    We determine retention periods based on actual needs,
+                    including providing services, maintaining account and
+                    messaging features, handling reports, protecting security,
+                    resolving disputes, and complying with legal obligations.
+                </p>
+                <p>
+                    When information is no longer necessary for its collection
+                    purpose and there is no lawful basis to retain it, we will
+                    delete it or otherwise handle it appropriately in accordance
+                    with applicable law and actual circumstances.
+                </p>
+                <p>
+                    Different categories of information may have different
+                    retention periods. Data processed by third-party services
+                    may also be subject to their applicable terms and settings.
+                </p>
+
+                <h3>6.2 Security Measures</h3>
+                <p>
+                    We take reasonable technical and organizational measures
+                    based on the nature of the data, the processing involved,
+                    and potential risks to reduce the risk of unauthorized
+                    access, disclosure, alteration, or loss.
+                </p>
+                <p>
+                    Internet transmission and electronic storage cannot be
+                    guaranteed to be completely secure. We work to protect
+                    information but cannot promise that every system or
+                    transmission method will be secure in all circumstances.
+                </p>
+
+                <h3>6.3 Your Security Responsibilities</h3>
+                <p>
+                    Please keep your account credentials secure and do not
+                    share passwords, verification codes, or other security
+                    credentials. If you believe your account may have been
+                    accessed without authorization, contact us using the
+                    email address provided in this policy.
+                </p>
+            </section>
+
+            <section id="en-7">
+                <h2>7. Your Rights and Choices</h2>
+
+                <h3>7.1 Manage Profile Information</h3>
+                <p>
+                    You may use available app features to view or update
+                    editable profile information, such as your nickname or
+                    avatar. Some information may not be directly editable
+                    for security, operational, or legal reasons.
+                </p>
+
+                <h3>7.2 Manage Notification Permissions</h3>
+                <p>
+                    You can enable or disable tooChat notifications in your
+                    device settings. Disabling notifications may change how
+                    you receive alerts but does not necessarily disable
+                    in-app messaging.
+                </p>
+
+                <h3>7.3 Manage Friends and Blocking</h3>
+                <p>
+                    Where the app provides the relevant features, you may
+                    manage friend relationships or block other users. These
+                    settings may affect interactions but may not automatically
+                    delete all data previously generated.
+                </p>
+
+                <h3>7.4 Reports, Feedback, and Privacy Requests</h3>
+                <p>
+                    If you have questions about our processing of personal
+                    information, or wish to request access, correction,
+                    deletion, withdrawal of consent, or exercise other rights
+                    provided by applicable law, contact us using the email
+                    address in this policy.
+                </p>
+                <p>
+                    We may need to verify your identity and the scope of your
+                    request to protect account security and the rights of
+                    others. We may be unable to immediately delete information
+                    or fulfill certain requests where retention is permitted
+                    or required by law.
+                </p>
+
+                <h3>7.5 Account Deletion</h3>
+                <p>
+                    If the app provides an account deletion feature, you may
+                    submit a deletion request by following the in-app
+                    instructions. Information will be handled according to
+                    the applicable deletion process and legal requirements.
+                </p>
+                <p>
+                    Account deletion does not necessarily mean that all
+                    related information will be removed immediately from
+                    every system and backup. Certain information may be
+                    retained for a lawful and necessary period to comply
+                    with legal obligations, resolve disputes, prevent abuse,
+                    or complete necessary technical processes.
+                </p>
+            </section>
+
+            <section id="en-8">
+                <h2>8. Children's Privacy</h2>
+                <p>
+                    tooChat is not specifically designed for children.
+                    Where applicable law imposes age-related, consent, or
+                    other requirements concerning minors' use of services
+                    or processing of their personal information, we will
+                    handle the matter in accordance with those requirements.
+                </p>
+                <p>
+                    If you are a parent or guardian and believe that a minor
+                    has provided personal information to us without
+                    appropriate authorization, please contact us using the
+                    email address in this policy so that we can assess
+                    the situation and take appropriate action.
+                </p>
+            </section>
+
+            <section id="en-9">
+                <h2>9. Policy Updates</h2>
+                <p>
+                    We may update this policy in response to changes in
+                    service features, data processing practices, applicable
+                    laws, or operational arrangements. Updated versions
+                    will be published on this page, and the effective date
+                    will be updated as appropriate.
+                </p>
+                <p>
+                    If a change concerns a material matter for which
+                    applicable law requires specific notice or consent,
+                    we will take the steps required by that law.
+                </p>
+                <p>
+                    We recommend checking this page periodically to review
+                    the current Privacy Policy.
+                </p>
+            </section>
+
+            <section id="en-10">
+                <h2>10. Contact Us</h2>
+                <p>
+                    If you have questions about this Privacy Policy, our
+                    processing of personal information, or a privacy request,
+                    you can contact us at the email address below.
+                </p>
+                <div class="contact-card">
+                    <p><strong>tooChat Privacy and Support Contact</strong></p>
+                    <p><a href="mailto:kfzcount@gmail.com">kfzcount@gmail.com</a></p>
+                    <p class="muted">
+                        To help us handle your request, please describe the
+                        issue and relevant circumstances. Do not include
+                        passwords, verification codes, or other unnecessary
+                        sensitive information in your email.
+                    </p>
+                </div>
+            </section>
+
+            <p class="muted" style="margin-top:28px;font-size:12px;">
+                This policy should be read in light of the features actually
+                provided by tooChat, our actual data processing practices,
+                and applicable law. If this policy differs from the actual
+                features, we will review and revise it as appropriate.
+            </p>
+        </article>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="./index.html">
+            <span data-lang="zh">技术网站首页</span>
+            <span data-lang="en" hidden>Technology Home</span>
+        </a>
+        <a href="mailto:kfzcount@gmail.com">
+            <span data-lang="zh">联系我们</span>
+            <span data-lang="en" hidden>Contact Us</span>
+        </a>
+    </div>
+    <p>© <span id="current-year">2026</span> tooChat. All rights reserved.</p>
+</footer>
+
+<script>
+(function () {
+    "use strict";
+
+    const languageButtons =
+        document.querySelectorAll("[data-set-language]");
+
+    const languageContents =
+        document.querySelectorAll("[data-content-language]");
+
+    const translatedElements =
+        document.querySelectorAll("[data-lang]");
+
+    function setLanguage(language) {
+        const selectedLanguage = language === "en" ? "en" : "zh";
+
+        document.documentElement.lang =
+            selectedLanguage === "en" ? "en" : "zh-CN";
+
+        languageContents.forEach(function (element) {
+            element.hidden =
+                element.getAttribute("data-content-language")
+                !== selectedLanguage;
+        });
+
+        translatedElements.forEach(function (element) {
+            element.hidden =
+                element.getAttribute("data-lang") !== selectedLanguage;
+        });
+
+        languageButtons.forEach(function (button) {
+            const active =
+                button.getAttribute("data-set-language")
+                === selectedLanguage;
+
+            button.classList.toggle("active", active);
+            button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+
+        document.title = selectedLanguage === "en"
+            ? "Privacy Policy - tooChat"
+            : "隐私政策 - tooChat";
+    }
+
+    languageButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            setLanguage(button.getAttribute("data-set-language"));
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+
+    document.getElementById("current-year").textContent =
+        String(new Date().getFullYear());
+
+    setLanguage("zh");
+})();
+</script>
+</body>
+</html>
